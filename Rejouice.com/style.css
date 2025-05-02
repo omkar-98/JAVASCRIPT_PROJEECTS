@@ -1,0 +1,834 @@
+@font-face {
+  font-family: NB International;
+  src: url(./font/NBInternationalProBoo.ttf);
+}
+@font-face {
+  font-family: rejouice;
+  src: url(./font/Rejouice-Headline.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NB International;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #FAF8F3;
+}
+
+
+
+.Loader{
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.Loader h2{
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.cursor {
+  height: 7.7vw;
+  width: 7.7vw;
+  border-radius: 50%;
+  background-color: #eb3f0f;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.cursor H4 {
+  font-size: 1.2vw;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #dadada;
+}
+
+.page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.page1-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5vw 3.1vw;
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  z-index: 99;
+}
+.nav-part1 {
+  display: block;
+  height: 33px;
+  overflow: hidden;
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+
+nav h4 {
+  font-size: 1.4vw;
+  font-weight: 100;
+}
+
+.page1-content h1 {
+  font-family: "Rejouice", sans-serif;
+  font-size: 27vw;
+  line-height: 27vw;
+  font-weight: 500;
+ 
+}
+
+.page1-content h1 span {
+  font-family: rejouice;
+  display: inline-block;
+}
+
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #FAF8F3;
+  padding: 6vw 3vw;
+}
+
+.small-heading {
+  padding-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+
+.small-heading h4 {
+  font-weight: 200;
+  font-size: 1.6vw;
+  
+}
+
+.elem h1 {
+  font-size: 4.2vw;
+  line-height: 4.7vw;
+  font-weight: 200;
+  text-align: start;
+}
+
+.page3 {
+  padding: 5vw 3vw;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page3-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6vw ;
+  padding-bottom: 4vw;
+}
+
+.page3-top h4 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.page3-top span {
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 4px 9px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+}
+.page3-top i {
+  padding: 0.3vw;
+}
+
+.page3-top h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 4.5vw;
+  font-weight: 500;
+}
+.second-h2{
+  margin-bottom: 11vw;
+}
+
+.video-heading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0;
+}
+
+.video-heading h4{
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+.video-heading .work{
+  cursor: pointer;
+}
+
+.page3-elements{
+  height: 78vh;
+  width: 100%;
+  /* margin-top:9vw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page3-elements .box{
+  height: 100%;
+  width: 32.5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.page3-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page3-elements .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: all ease-in 0.7s;
+}
+
+.page3-elements .box:hover img{
+  opacity: 0;
+}
+
+.page4{
+ min-height: 100vh;
+  width: 100%;
+  background-color: #FAF8F3;
+  padding: 2.5vw 3vw;
+  
+  
+}
+.page4 .Quality-qunatity{
+  padding-bottom: 1vw;
+  border-bottom: 1px solid black;
+}
+.page4 .Quality-qunatity h4{
+  font-size: 1.6vw;
+  font-weight: 500;
+}
+
+.page5{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #FAF8F3;
+  padding:2vw 0;
+  /* position: relative; */
+}
+
+.page5 .swiper-heading{
+  display: flex;
+  align-items:end;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.page5 .swiper-heading h4{
+  font-size: 1.6vw;
+  font-weight: 500;
+  padding-bottom: 0.6vw;
+  cursor: pointer;
+}
+
+.page5 h1{
+  font-size: 9vw;
+  font-family: rejouice;
+  font-weight: 100;
+}
+.page5 .swiper-heading .contact {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+
+
+.swiperDiv{
+  height: 60vh;
+  width: 133%;
+  position: relative;
+  margin-top: -5%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 400px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 19%;
+ object-fit: cover;
+  object-position: center;
+}
+
+
+.page5 .About-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:13vw 3vw;
+  font-family: NB International;
+}
+.page5 .About-us h4{
+  font-size: 1.2vw;
+  font-weight: 100;
+}
+
+.page5 .About-us h2{
+  font-size: 5vw;
+  border-bottom: 3px solid black;
+  font-weight: 100;
+  font-family: NB International;
+}
+
+
+.page6{
+  height: 100vh;
+  width: 100%;
+  background-color:#0E0E0E;
+  padding:2vw 3vw 0 3vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page6-top{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page6 h3{
+  padding-bottom: 1vw;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.page6 button{
+  font-size: 1.2vw;
+  padding:  1vw ;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.page6 button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.page6 .about-section{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5vw;
+}
+
+.page6 .about-section a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.page6 .about-section li{
+  list-style-type: none;
+}
+
+.page6-bottom{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.page6-bottom h4{
+  font-size: 1.3 vw;
+  font-weight: 500;
+}
+
+.page6 .email{
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.page6 .email li{
+  list-style-type: none;
+}
+.page6 .email a{
+  text-decoration: none;
+  color: #fff;
+}
+.page6 .email{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.page6-bottom .place h4{
+  font-size: 1.2vw;
+}
+
+.page6 .footer h1{
+  font-family: "Rejouice", sans-serif;
+  font-size: 26vw;
+  line-height: 27vw;
+  font-weight: 500;
+}
+
+.page6 .footer h1 span{
+  font-family: rejouice;
+  color: #fff;
+  display: inline-block;
+}
+
+
+/* for maximum width 500px */
+
+@media(max-width:500px) {
+
+  .Loader{
+  height: 100vh;
+  width: 100%;
+ 
+  gap: 10px;
+  }
+  .Loader h2{
+    font-size: 5.5vw;
+  }
+
+.cursor{
+  display: none;
+} 
+
+.page1 .page1-content h4{
+  font-size: 5vw;
+}
+.page1 .menu h4{
+  padding: 1vw 5vw;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 5.5vw;
+}
+
+.page2 .small-heading{
+  padding-top: 6vw;
+}
+
+.page2 .small-heading h4{
+  font-size: 4vw;
+  padding-bottom: 1vw;
+}
+
+.elem{
+  padding-top:2.5vw;
+
+}
+.elem h1{
+  font-size: 7.8vw;
+  line-height: 8vw;
+}
+
+.page3-top{
+  padding: 4vw 2vw 16vw;
+  width: 100%;
+
+}
+.page3-top h4{
+  font-size: 4vw;
+  padding-bottom: 3vw;
+}
+
+.page3-top h4 span{
+  font-size: 2.5vw;
+}
+.page3-top h2{
+  padding: 0 2vw;
+  font-size: 13vw;
+}
+
+.video-heading h4{
+  font-size: 3.7vw;
+}
+
+.page3-elements{
+  display: flex;
+  padding:4vw 0 8vw;
+  
+}
+.page3-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page4 .Quality-qunatity h4{
+  font-size: 4vw; 
+  line-height: 3.8vw;
+  padding-bottom: 1vw;
+}
+
+.page4 .Quality-qunatity{
+  padding-top: 6vw;
+}
+
+.page5 .swiper-heading h1{
+  font-size: 17vw;
+  line-height: 15vw;
+}
+
+.page5 .swiper-heading h4{
+  font-size: 4.5vw;
+}
+
+.swiperDiv{
+  height: 60vh;
+  width: 200%;
+  position: relative;
+  margin-top: -50%;
+}
+
+
+.page5 .About-us{
+  padding:30vw 3vw;
+  gap: 2vw;
+}
+.page5 .About-us h4{
+  font-size: 3.9vw;
+  font-weight: 100;
+}
+
+.page5 .About-us h2{
+  font-size:12vw;
+  border-bottom: 3px solid black;
+  font-weight: 100;
+  font-family: NB International;
+}
+
+.page6 .page6-top{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+.page6 .page6-top .take-a-seat h3{
+  padding: 5vw 0;
+  font-size: 7vw;
+}
+.page6 .page6-top .take-a-seat button {
+  font-size: 3.5vw;
+  padding: 2.5vw 4vw;
+}
+
+.about-section .about li a{
+  font-size: 4vw;
+  line-height: 7vw;
+  
+}
+
+.about-section{
+  width: 100%;
+}
+
+.about-section .about {
+  width: 70%;
+}
+
+.about-section .social-media {
+  width: 40%;
+}
+.about-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section .social-media li a{
+  font-size: 4vw;
+  line-height: 7vw;
+  width: 30%;
+}
+
+.page6-bottom{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.page6-bottom .place h4{
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.page6 .email{
+  font-size: 4vw;
+  font-weight: 500;
+}
+
+.page6 .email{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+
+.page6 .footer h1{
+  font-size: 27vw;
+  font-weight: 500;
+}
+}
+
+
+
+/* for maximum width 900px */
+
+@media(min-width: 502px) and (max-width: 900px) {
+
+  .Loader{
+  height: 100vh;
+  width: 100%;
+  gap:8px ;
+  }
+  .Loader h2{
+    font-size: 3vw;
+  }
+
+
+
+.page1 .page1-content h4{
+  font-size: 2.5vw;
+}
+.page1 .menu h4{
+  font-size: 2.5vw;
+}
+
+.page2 {
+ 
+  background-color: #FAF8F3;
+  padding: 5vw 3vw 0 3vw;
+}
+.page2 .small-heading{
+  padding-top: 1.8vw;
+}
+
+.page2 .small-heading h4{
+  font-size: 2.2vw;
+  padding-bottom: 1vw;
+}
+
+.elem{
+  padding-top:1vw;
+
+}
+.elem h1{
+  font-size: 4.2vw;
+  line-height: 5vw;
+}
+
+.page3-top{
+  padding: 1vw 2vw 0 2vw;
+  width: 100%;
+}
+.page3-top h4{
+  font-size: 2.2vw;
+}
+
+.page3-top h4 span{
+  font-size: 1.3vw;
+}
+.page3-top h2{
+  font-size: 5.5vw;
+}
+
+.video-heading h4{
+  font-size: 2.2vw;
+}
+
+.page3-elements{
+  display: flex;
+  padding:1vw 0 2vw;
+  
+}
+.page3-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page4 .Quality-qunatity h4{
+  font-size: 2.2vw; 
+  line-height: 2.5vw;
+  
+}
+
+
+
+.page5 .swiper-heading h1{
+  font-size: 11vw;
+  line-height: 15vw;
+}
+
+.page5 .swiper-heading h4{
+  font-size: 2.5vw;
+}
+
+.swiperDiv{
+  height: 60vh;
+  width: 133%;
+  position: relative;
+  margin-top: -21%;
+}
+
+
+.page5 .About-us{
+  padding:12vw 3vw;
+  
+}
+.page5 .About-us h4{
+  font-size: 1.8vw;
+  font-weight: 100;
+}
+
+.page5 .About-us h2{
+  font-size:6vw;
+  border-bottom: 3px solid black;
+  font-weight: 100;
+  font-family: NB International;
+}
+
+.page6 .page6-top{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+.page6 .page6-top .take-a-seat h3{
+ padding: 2vw 0;
+  font-size: 3vw;
+}
+.page6 .page6-top .take-a-seat button {
+  font-size: 1.8vw;
+  padding: 1vw 1.2vw;
+}
+
+.about-section .about li a{
+  font-size: 2vw;
+  line-height: 3.3vw;  
+}
+
+.about-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section .social-media li a{
+  font-size: 2vw;
+  line-height: 3.3vw;  
+}
+
+
+.page6-bottom .place h4{
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.page6 .email{
+  font-size: 2vw;
+  font-weight: 500;
+}
+.page6 .footer h1{
+  font-size: 27vw;
+  font-weight: 500;
+}
+}
